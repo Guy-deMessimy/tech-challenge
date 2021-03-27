@@ -1,0 +1,26 @@
+.FormKingdom {
+    width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .form-data {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+  }
+  
+  .FormKingdom .form-data label {
+    display: inline-block;
+    width: 105px;
+    margin-right: 10px;
+    text-align: right;
+  }
+  
+  .FormKingdom .form-data input:not([type="submit"]) {
+    flex-grow: 1;
+  }

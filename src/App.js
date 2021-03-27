@@ -10,7 +10,7 @@ import Nav from "./components/Nav";
 // Pages
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Contact from "./pages/Contact";
+import Contact from "./pages/Contact/Contact";
 import Asset from "./pages/Asset";
 
 function App() {
