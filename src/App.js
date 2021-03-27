@@ -11,7 +11,7 @@ import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact/Contact";
-import Asset from "./pages/Asset";
+import Asset from "./pages/Asset/Asset";
 
 function App() {
   return (
