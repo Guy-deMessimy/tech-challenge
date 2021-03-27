@@ -5,11 +5,11 @@ import { Route } from "react-router-dom";
 import "./styles.scss";
 
 // Components
-import Nav from "./components/Nav";
+import Nav from "./components/Nav/nav";
 
 // Pages
-import Home from "./pages/Home";
-import About from "./pages/About";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Asset from "./pages/Asset/Asset";
 
@@ -20,8 +20,8 @@ function App() {
       <div className="">
         <Route exact={true} path="/" component={Home} />
         <Route exaxt path="/about" component={About} />
-        <Route exact path="/contact" component={Contact} />
         <Route exact path="/asset" component={Asset} />
+        <Route exact path="/contact" component={Contact} />
       </div>
     </div>
   );

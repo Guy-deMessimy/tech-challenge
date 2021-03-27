@@ -25,11 +25,11 @@ export default function Nav() {
           <NavLink activeClassName="active" to="/about" onClick={toggle}>
             <li>about</li>
           </NavLink>
-          <NavLink activeClassName="active" to="/contact" onClick={toggle}>
-            <li>contact</li>
-          </NavLink>
           <NavLink activeClassName="active" to="/asset" onClick={toggle}>
             <li>asset</li>
+          </NavLink>
+          <NavLink activeClassName="active" to="/contact" onClick={toggle}>
+            <li>contact</li>
           </NavLink>
         </ul>
       </nav>
