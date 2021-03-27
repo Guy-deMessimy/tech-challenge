@@ -3,7 +3,7 @@ import Header from "../../components/About/header";
 import UserCard from "../../components/About/userCards";
 import Footer from "../../components/About/footer";
 
-// styles
+// Style
 import "./style.scss";
 
 function About() {

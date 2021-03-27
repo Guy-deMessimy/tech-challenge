@@ -6,11 +6,11 @@ class UserCards extends Component {
     data: [],
     per: 3,
     page: 1,
-    total_pages: null
+    total_pages: null,
   };
 
   // use charAt for getbackc a new string with character give an argument
-  uppercase = word => {
+  uppercase = (word) => {
     return word.charAt(0).toUpperCase() + word.slice(1);
   };
 
@@ -18,21 +18,21 @@ class UserCards extends Component {
     const { per, page, data } = this.state;
     const endpoint = `${url_API}/?nat=us&results=${per}&page=${page}`;
     fetch(endpoint)
-      .then(response => response.json())
-      .then(json => {
+      .then((response) => response.json())
+      .then((json) => {
         this.setState({
           data: [...data, ...json.results],
           scrolling: false,
-          total_pages: json.info.results
+          total_pages: json.info.results,
         });
       });
   };
 
   loadMore = () => {
     this.setState(
-      prevState => ({
+      (prevState) => ({
         page: prevState.page + 1,
-        scrolling: true
+        scrolling: true,
       }),
       this.loadData
     );
@@ -46,7 +46,7 @@ class UserCards extends Component {
     return (
       <div className="clearfix">
         <div className="row">
-          {this.state.data.map(data => (
+          {this.state.data.map((data) => (
             <div className="col-md-4 animated fadeIn" key={data.id.value}>
               <div className="card">
                 <div className="card-body">
@@ -76,7 +76,7 @@ class UserCards extends Component {
         </div>
         <button
           className="btn btn-light btn-block w-50 mx-auto"
-          onClick={e => {
+          onClick={(e) => {
             this.loadMore();
           }}
         >

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 
-import "./Nav.scss";
+// Style
+import "./style.scss";
 
 export default function Nav() {
   const [toggleState, setToggleState] = useState(false);
@@ -13,7 +14,9 @@ export default function Nav() {
   return (
     <header>
       <div className="logo" onClick={toggle}>
-        <Link to="/">Logo</Link>
+        <Link to="/">
+          <img src="/images/colchis.png" alt="Colchis logo" />
+        </Link>
       </div>
 
       <nav>

@@ -13,7 +13,7 @@ const royalAsset = [
     priority: "Low",
     number: 42,
     worth: 6000000,
-    currencies: "lori"
+    currencies: "lori",
   },
   {
     id: 532,
@@ -21,7 +21,7 @@ const royalAsset = [
     priority: "High",
     number: 4,
     worth: 24000000,
-    currencies: "lori"
+    currencies: "lori",
   },
   {
     id: 240,
@@ -29,7 +29,7 @@ const royalAsset = [
     priority: "High",
     number: 10000,
     worth: 10000000,
-    currencies: "lori"
+    currencies: "lori",
   },
   {
     id: 240,
@@ -37,7 +37,7 @@ const royalAsset = [
     priority: "Low",
     number: 18,
     worth: 4000,
-    currencies: "lori"
+    currencies: "lori",
   },
   {
     id: 240,
@@ -45,7 +45,7 @@ const royalAsset = [
     priority: "High",
     number: 51942,
     worth: 4000000,
-    currencies: "lori"
+    currencies: "lori",
   },
   {
     id: 240,
@@ -53,7 +53,7 @@ const royalAsset = [
     priority: "Medium",
     number: 997000,
     worth: 11000000,
-    currencies: "lori"
+    currencies: "lori",
   },
   {
     id: 240,
@@ -61,7 +61,7 @@ const royalAsset = [
     priority: "High",
     number: 99,
     worth: 110000000,
-    currencies: "lori"
+    currencies: "lori",
   },
 ];
 

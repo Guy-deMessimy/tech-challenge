@@ -1,114 +1,102 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
+import * as emailjs from "emailjs-com";
+
+// Style
 import "./style.scss";
 
 /**
- * @param {string} url_API
+ * @param {string} nom
+ * @param {string} mail
+ * @param {string} prestation
  */
 
-const url_API = "https://post-a-form.herokuapp.com/api/employees"
+const Contact = () => {
+  const [data, setData] = useState({
+    nom: "",
+    mail: "",
+    prestation: "",
+  });
 
-class Contact extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      firstname: "",
-      lastname:"",
-      email: "",
-      message: "",
-    };
-  }
-
-  onChange = (e) => {
-    this.setState({
-      [e.target.name]: e.target.value,
-    });
-    console.log(this.state)
+  const handleChange = (e) => {
+    console.log("got field " + e.target.name + ", value " + e.target.value);
+    setData({ ...data, [e.target.name]: e.target.value });
   };
 
-  onSubmit = (e) => {
-    e.preventDefault();
-    const config = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(this.state),
+  const { nom, mail, prestation } = data;
+
+  const handleSubmit = (event) => {
+    console.log(data);
+    event.preventDefault();
+    const templateParams = {
+      from_name: nom,
+      from_email: mail,
+      to_name: "Colchis",
+      subject: prestation,
     };
-    const url = url_API;
-    fetch(url, config)
-      .then((res) => res.json())
-      .then((res) => {
-        if (res.error) {
-          alert(res.error);
-        } else {
-          alert(`Kingdom #${res} has been successfully contacted!`);
-        }
-      })
-      .catch((e) => {
-        console.error(e);
-        alert("There was an error when contacted the Kingdom.");
-      });
-  };
-
-  render() {
-    return (
-      <div className="FormKingdom">
-        <h1>Contact the Royal Kingdom</h1>
-        <form onSubmit={this.onSubmit}>
-          <fieldset>
-            <div className="form-data">
-              <label htmlFor="firstname">Firstname</label>
-              <input
-                type="text"
-                id="firstname"
-                name="firstname"
-                value={this.state.name}
-                onChange={this.onChange}
-              />
-            </div>
-
-            <div className="form-data">
-              <label htmlFor="lastname">Lastname</label>
-              <input
-                type="text"
-                id="lastname"
-                name="lastname"
-                value={this.state.name}
-                onChange={this.onChange}
-              />
-            </div>
-
-            <div className="form-data">
-              <label htmlFor="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={this.state.name}
-                onChange={this.onChange}
-              />
-            </div>
-
-            <div className="form-data">
-              <label HtmlFor="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                cols="33"
-                value={this.state.message}
-                onChange={this.onChange}
-              />
-            </div>
-            <hr />
-            <div className="form-data">
-              <input type="submit" value="Send" />
-            </div>
-          </fieldset>
-        </form>
-      </div>
+    emailjs.send(
+      "service_2etpuqa",
+      "template_v0o2cnd",
+      templateParams,
+      "user_Thhn4IaRT3llceNo0OZ6m"
     );
-  }
-}
+    resetForm();
+  };
+
+  const resetForm = () => {
+    setData({
+      nom: "",
+      mail: "",
+      prestation: "",
+    });
+  };
+
+  return (
+    <div className="FormKingdom">
+      <h1>Contact the Royal Kingdom</h1>
+      <form onSubmit={handleSubmit}>
+        <fieldset>
+          <div className="form-data">
+            <label htmlFor="nom">Name</label>
+            <input
+              type="text"
+              id="nom"
+              name="nom"
+              value={nom}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div className="form-data">
+            <label htmlFor="mail">Email</label>
+            <input
+              type="mail"
+              id="mail"
+              name="mail"
+              value={mail}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div className="form-data">
+            <label HtmlFor="prestation">Message</label>
+            <textarea
+              id="prestation"
+              name="prestation"
+              rows="5"
+              cols="33"
+              value={prestation}
+              onChange={handleChange}
+            />
+          </div>
+          <hr />
+          <div className="form-data">
+            <input type="submit" value="Send" />
+          </div>
+        </fieldset>
+      </form>
+      <p>We will respond as soon as possible, hopefully it will be fast with us ! </p>
+    </div>
+  );
+};
 
 export default Contact;

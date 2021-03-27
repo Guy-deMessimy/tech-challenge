@@ -13,9 +13,11 @@ class Footer extends Component {
           &copy; {this.year()}
           <a
             href="https://github.com/Guy-deMessimy"
+            target="popup"
+            onclick="window.open('https://github.com/Guy-deMessimy','name','width=600,height=400')"
             rel="author techchallenge "
           >
-           Guy de Messimy
+            Guy de Messimy
           </a>
           , back to the future by random user API
         </p>

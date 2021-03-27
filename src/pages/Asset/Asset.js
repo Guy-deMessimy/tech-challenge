@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import royalAsset from "./Data";
 
-// styles
+// Style
 import "./style.scss";
-
 
 const Row = ({ id, name, priority, number, worth, currencies }) => (
   <div className="row">
@@ -48,7 +47,9 @@ class Asset extends Component {
         <div>
           <h1>The Kingdom's Royal Asset</h1>
           <div className="table">
-          <legend className="legend">You can clicking the column's header for sorting data </legend>
+            <legend className="legend">
+              You can clicking the column's header for sorting data{" "}
+            </legend>
             <div className="header">
               <div onClick={() => this.sortBy("id")}>ID</div>
               <div onClick={() => this.sortBy("name")}>Asset Name</div>

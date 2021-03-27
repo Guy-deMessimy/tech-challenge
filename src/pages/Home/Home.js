@@ -1,4 +1,6 @@
 import React from "react";
+
+// Style
 import "./style.scss";
 
 export default function Home() {
@@ -22,8 +24,8 @@ export default function Home() {
               class="purple-button"
               onClick={(e) => {
                 e.preventDefault();
-                window.open('https://en.wikipedia.org/wiki/Colchis');
-                }}
+                window.open("https://en.wikipedia.org/wiki/Colchis");
+              }}
             >
               Click for more information
             </button>
@@ -78,8 +80,8 @@ export default function Home() {
           <div class="media-container">
             <span class="service-item-title">Colchis Mobile</span>
             <div class="service-item-description">
-              Forget your stone tablet to commmunicate, we are proud to share our new
-              technolgy named mobile phone, you will enjoy !
+              Forget your stone tablet to commmunicate, we are proud to share
+              our new technolgy named mobile phone, you will enjoy !
             </div>
           </div>
         </div>
@@ -145,8 +147,8 @@ export default function Home() {
           <div class="media-container">
             <span class="service-item-title">Tourism Services</span>
             <div class="service-item-description">
-              Our kingdom offers a full range of hotels, restaurants,
-              bar and cultural places for both of people.
+              Our kingdom offers a full range of hotels, restaurants, bar and
+              cultural places for both of people.
             </div>
           </div>
         </div>
@@ -172,8 +174,8 @@ export default function Home() {
           <div class="media-container">
             <span class="service-item-title">Kingdom Quality</span>
             <div class="service-item-description">
-              The kingdom is powerfull, safe with an eco-responsability concerns,  
-              visiting Colchis it will be a quiet experience.
+              The kingdom is powerfull, safe with an eco-responsability
+              concerns, visiting Colchis it will be a quiet experience.
             </div>
           </div>
         </div>
@@ -203,7 +205,7 @@ export default function Home() {
       <section id="our-team">
         <div class="team-member-container">
           <div class="team-member-photo">
-            <img src="/images/guy.jpg" alt="" />
+            <img src="/images/guy.jpg" alt="Guy" />
           </div>
           <div class="info-container">
             <div class="team-member-name">Guy</div>
@@ -213,7 +215,7 @@ export default function Home() {
 
         <div class="team-member-container">
           <div class="team-member-photo">
-            <img src="/images/jason.png" alt="" />
+            <img src="/images/jason.png" alt="Jason" />
           </div>
           <div class="info-container">
             <div class="team-member-name">Jason</div>
@@ -223,7 +225,7 @@ export default function Home() {
 
         <div class="team-member-container">
           <div class="team-member-photo">
-            <img src="/images/pollux.jpg" alt="" />
+            <img src="/images/pollux.jpg" alt="Pollux" />
           </div>
           <div class="info-container">
             <div class="team-member-name">Pollux</div>
@@ -233,7 +235,7 @@ export default function Home() {
 
         <div class="team-member-container">
           <div class="team-member-photo">
-            <img src="/images/serverux.jpg" alt="" />
+            <img src="/images/serverux.jpg" alt="Serverux" />
           </div>
           <div class="info-container">
             <div class="team-member-name">Serverux</div>
@@ -243,7 +245,7 @@ export default function Home() {
 
         <div class="team-member-container">
           <div class="team-member-photo">
-            <img src="/images/aetes.jpg" alt="" />
+            <img src="/images/aetes.jpg" alt="Aetes" />
           </div>
           <div class="info-container">
             <div class="team-member-name">Aetes</div>
@@ -253,7 +255,7 @@ export default function Home() {
 
         <div class="team-member-container">
           <div class="team-member-photo">
-            <img src="/images/medea.jpg" alt="" />
+            <img src="/images/medea.jpg" alt="Medea" />
           </div>
           <div class="info-container">
             <div class="team-member-name">Medea</div>
