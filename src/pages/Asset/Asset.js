@@ -1,6 +1,9 @@
 import React, { Component } from "react";
-import "./style.scss";
 import royalAsset from "./Data";
+
+// styles
+import "./style.scss";
+
 
 const Row = ({ id, name, priority, number, worth, currencies }) => (
   <div className="row">
@@ -41,18 +44,21 @@ class Asset extends Component {
     const rows = this.state.data.map((rowData) => <Row {...rowData} />);
 
     return (
-      <div>
-        <h1>The Kingdom's Royal Asset</h1>
-        <div className="table">
-          <div className="header">
-            <div onClick={() => this.sortBy("id")}>ID</div>
-            <div onClick={() => this.sortBy("name")}>Asset Name</div>
-            <div onClick={() => this.sortBy("priority")}>Priority</div>
-            <div onClick={() => this.sortBy("number")}>Number</div>
-            <div onClick={() => this.sortBy("worth")}>Worth</div>
-            <div onClick={() => this.sortBy("currencies")}>Currencies</div>
+      <div className="asset_container">
+        <div>
+          <h1>The Kingdom's Royal Asset</h1>
+          <div className="table">
+          <legend className="legend">You can clicking the column's header for sorting data </legend>
+            <div className="header">
+              <div onClick={() => this.sortBy("id")}>ID</div>
+              <div onClick={() => this.sortBy("name")}>Asset Name</div>
+              <div onClick={() => this.sortBy("priority")}>Priority</div>
+              <div onClick={() => this.sortBy("number")}>Number</div>
+              <div onClick={() => this.sortBy("worth")}>Worth</div>
+              <div onClick={() => this.sortBy("currencies")}>Currencies</div>
+            </div>
+            <div className="body">{rows}</div>
           </div>
-          <div className="body">{rows}</div>
         </div>
       </div>
     );

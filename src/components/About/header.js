@@ -4,7 +4,7 @@ class Header extends Component {
   render() {
     return (
       <header className="clearfix mt-4">
-        <h1>The Descendant Royal Family </h1>
+        <h1>The Royal Descendant Family </h1>
       </header>
     );
   }

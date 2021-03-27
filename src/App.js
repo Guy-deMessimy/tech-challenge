@@ -11,6 +11,7 @@ import Nav from "./components/Nav/nav";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
+import DemoCarousel from './pages/Carousel/carousel'
 import Asset from "./pages/Asset/Asset";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route exact={true} path="/" component={Home} />
         <Route exaxt path="/about" component={About} />
         <Route exact path="/asset" component={Asset} />
+        <Route exact path="/gallery" component={DemoCarousel} />
         <Route exact path="/contact" component={Contact} />
       </div>
     </div>

@@ -29,6 +29,7 @@ main {
     border-radius: 10px;
     height: 3rem;
     width: 11rem;
+    cursor: pointer;
   }
   
   .purple-button:hover {
@@ -41,6 +42,7 @@ main {
     border-radius: 5px;
     height: 3rem;
     width: 11rem;
+    
   }
 
   .page-div-container {
@@ -99,4 +101,48 @@ main {
     display: flex;
     flex-direction: column;
     width: 60%;
+  }
+
+  #our-team {
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 120px;
+  }
+  
+  .team-member-container {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .team-member-photo img {
+    border-radius: 50%;
+  }
+  
+  .team-member-photo {
+    padding-right: 20px;
+  }
+  
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+  }
+  
+  .team-member-name {
+    font-weight: 800;
+    font-size: 20px;
+    align-self: flex-start;
+  }
+  
+  .team-member-role {
+    font-weight: 200;
+    font-size: 12px;
+    opacity: 0.4;
+    padding-top: 10px;
   }

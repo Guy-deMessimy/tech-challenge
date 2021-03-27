@@ -28,6 +28,9 @@ export default function Nav() {
           <NavLink activeClassName="active" to="/asset" onClick={toggle}>
             <li>asset</li>
           </NavLink>
+          <NavLink activeClassName="active" to="/gallery" onClick={toggle}>
+            <li>gallery</li>
+          </NavLink>
           <NavLink activeClassName="active" to="/contact" onClick={toggle}>
             <li>contact</li>
           </NavLink>

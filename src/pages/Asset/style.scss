@@ -1,27 +1,32 @@
 .table {
-    margin: 1em;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+
+  .h1 {
+    margin-bottom: 25px;
+  }
+  .header,
+  .row {
     display: flex;
-    flex-direction: column;
-    
-    .h1{
-      margin-bottom: 25px;
-    }
-    .header, .row {
-      display: flex;
-      text-align: center;
-      
-      div {
-        flex: 1;
-        padding: 0.2rem 0.4em;
-        border: 1px solid rgb(238, 238, 238);
-      }
-    }
-    
-    .header {
-      background-color: rgb(238, 238, 238);
-      color:#222;
-      div { 
-        cursor: pointer;
-      }
+    text-align: center;
+
+    div {
+      flex: 1;
+      padding: 0.2rem 0.4em;
+      border: 1px solid rgb(238, 238, 238);
     }
   }
+
+  .header {
+    background-color: rgb(238, 238, 238);
+    color: #222;
+    div {
+      cursor: pointer;
+    }
+  }
+}
+.legend {
+  margin-bottom: 25px;
+  margin-top: 85px;
+}

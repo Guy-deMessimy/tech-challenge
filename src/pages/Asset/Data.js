@@ -57,7 +57,7 @@ const royalAsset = [
   },
   {
     id: 240,
-    name: "Canons",
+    name: "Cannons",
     priority: "High",
     number: 99,
     worth: 110000000,

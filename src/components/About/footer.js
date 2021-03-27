@@ -17,7 +17,7 @@ class Footer extends Component {
           >
            Guy de Messimy
           </a>
-          , Just a back to the future render by calling API
+          , back to the future by random user API
         </p>
       </footer>
     );
