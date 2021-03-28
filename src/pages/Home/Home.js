@@ -249,7 +249,7 @@ export default function Home() {
           </div>
           <div class="info-container">
             <div class="team-member-name">Aetes</div>
-            <div class="team-member-role">is nickname is Benoît</div>
+            <div class="team-member-role">King of Colchis</div>
           </div>
         </div>
 

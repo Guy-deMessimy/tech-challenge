@@ -52,7 +52,7 @@ const Contact = () => {
 
   return (
     <div className="FormKingdom">
-      <h1>Contact the Royal Kingdom</h1>
+      <h1 className="form_title">Contact the Royal Kingdom</h1>
       <form onSubmit={handleSubmit}>
         <fieldset>
           <div className="form-data">
@@ -94,7 +94,7 @@ const Contact = () => {
           </div>
         </fieldset>
       </form>
-      <p>We will respond as soon as possible, hopefully it will be fast with us ! </p>
+      <p>We will respond as soon as possible, hopefully it will be fast with Colchiser ! </p>
     </div>
   );
 };
