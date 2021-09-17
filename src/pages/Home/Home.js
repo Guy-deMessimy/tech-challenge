@@ -14,7 +14,7 @@ export default function Home() {
               Discover the most powerful place of Asia Minor ...
             </h1>
             <h2 id="about">
-              Colchis is known in Greek mythology as the destination of the
+              Colchis is known in Greek mythology as the place tobe for the
               Argonauts, as well as the home to Medea and the Golden Fleece. It
               was also described as a land rich with gold, iron, timber and
               honey that would export its resources mostly to ancient Hellenic
